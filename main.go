@@ -55,7 +55,7 @@ func main() {
         http.HandleFunc("/login", corsMiddleware(loginHandler))
 
         fmt.Println("Server running on http://localhost:8080")
-        log.Fatal(http.ListenAndServe(":8900", nil))
+        log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func loginHandler(w http.ResponseWriter, r *http.Request) {
